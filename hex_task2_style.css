@@ -1,0 +1,392 @@
+.mr-20 {
+    margin-right: 20px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.medium-text {
+    font-size: 24px;
+}
+
+.line-height-24 {
+    line-height: 24px;
+}
+
+.cell-text {
+    text-align: center;
+    height: 65px;
+    line-height: 65px;
+}
+
+.dark-bg-text {
+    color: #EAF0ED;
+    background: #3F5D45;
+}
+
+.light-bg-text {
+    color: #3F5D45;
+    background: #EAF0ED;
+}
+
+.green-text {
+    color: #3F5D45;
+}
+
+.light-green-text {
+    color: #EAF0ED;
+}
+
+.hover-dark-bg-text:hover {
+    color: #EAF0ED;
+    background: #3F5D45;
+}
+
+a {
+    color: #3F5D45;
+    display: block;
+    text-decoration: none;
+}
+
+.opacity-anim {
+    transition: ease-in .1s;
+}
+
+.opacity-anim:hover {
+    opacity: 0.7;
+}
+
+
+.wrap {
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-align-items: center;
+    margin-bottom: 30px;
+}
+
+h1 img {
+    width: 220px;
+    height: 40px;
+}
+
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar li a{
+    font-weight: 600;
+}
+
+.nav-bar li + li{
+    margin-left: 60px;
+}
+
+.underline-anim {
+    position: relative;
+}
+
+.underline-anim:after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #3F5D45;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transition: all .2s;
+}
+
+.underline-anim:hover:after{
+    left: 0%;
+    width: 100%;
+ }
+
+.cart {
+    margin-left: 19px;
+}
+
+.banner {
+    margin-bottom: 60px;
+}
+
+.category-nav {
+    width: 300px;
+}
+
+
+h2, .category-nav li{ 
+    font-family: PingFang TC;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.category-nav ul{
+    border: 1px solid #EAF0ED;
+}
+
+.category-nav ul li + li{
+    border-top: 0.5px solid #EAF0ED;
+}
+
+.category-nav ul li:hover{
+    background: #EAF0ED;
+}
+
+.main-content {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 620px;
+    justify-content: space-between;
+}
+
+.product-list li {
+    position: relative;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.featured-product-tag {
+    position: absolute;
+    z-index: 2;
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    padding: 10px;
+    letter-spacing: 4px;   
+    height: 107px;
+    text-align: center;
+}
+
+.add-to-favorite {
+    position: absolute;
+    z-index: 2;
+    height: 18px;
+    width: 20px;
+    left: 258px;
+    top: 20px;
+}
+
+.product-image {
+    height: auto;
+    display: block;
+}
+
+.product-name, .product-price {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.product-name {
+    border-right: 1px solid #EAF0ED;
+    width: 60%;
+}
+
+.product-price {
+    width: 40%;
+}
+
+.product-info-wrap {
+    display: flex;
+    width: 100%;
+    border-left: 1px solid #EAF0ED;
+    border-right: 1px solid #EAF0ED;
+    border-bottom: 1px solid #EAF0ED;
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+     box-sizing:        border-box;
+}
+
+.add-to-cart {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.paginator-wrap {
+    width: 940px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 60px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.paginator {
+    display: flex;
+    box-sizing: content-box;
+}
+
+.paginator-item {
+    box-sizing: content-box;
+    font-size: 20px;
+    height: 60px;
+    width: 60px;
+    border-top: 1px solid #EAF0ED;
+    border-bottom: 1px solid #EAF0ED;
+}
+
+.paginator li:first-child:not(:hover) {
+    border-left: 1px solid #EAF0ED;
+}
+
+.paginator li:last-child:not(:hover) {
+    border-right: 1px solid #EAF0ED;
+}
+
+.paginator li:first-child:hover {
+    border-left: 1px solid #3F5D45;
+}
+
+.paginator li:last-child:hover {
+    border-right: 1px solid #3F5D45;
+}
+
+.border-between:not(:hover) + .border-between:not(:hover){
+    border-left: 1px solid #EAF0ED;
+}
+
+.border-between:hover {
+    border-left: 1px solid #3F5D45;
+    border-right: 1px solid #3F5D45;
+}
+
+.paginator-item a{
+    width: 60px;
+    height: 60px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paginator-item:hover {
+    border-top: 1px solid #3F5D45;
+    border-bottom: 1px solid #3F5D45;
+}
+
+.mail-title-logo {
+    height: 40px;
+    width: 40px;
+}
+
+.mail-outer-wrap {
+    display: flex;
+    align-items: center;
+    height: 116px;
+    background: #3F5D45;
+    padding: 0px;
+}
+
+.mail-content-wrap {
+    margin: 0 auto;
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mail-footer-title-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.mail-input-wrap {
+    display: flex;
+    width: 380px;    
+    background: #EAF0ED;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mail-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.mail-send-arrow {
+    height: auto;
+    width: 64px;
+    display: flex;
+    padding: 15px 19px;
+    justify-content: center;
+    background: #FFE180;
+    object-fit: contain;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin-right: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    background: #EAF0ED;
+}
+
+.footer-content-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 940px;
+}
+
+.footer-left-content-wrap {
+    flex: 0 0 auto;
+}
+
+.footer-logo {
+    width: 171.22px;
+    height: 26.6px;
+    margin-top: 38.9px;
+}
+
+.footer-info {
+    margin-top: 115.5px;
+    margin-bottom: 30px;
+}
+
+.social-contact-icons {
+    display: flex;
+}
+
+.footer-contact-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.footer-contact-icon + .footer-contact-icon {
+    margin-left: 8px;
+}
+
+.footer-right-content-wrap {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-slogan {
+    margin-top: 30px;
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    line-height: 1.5;
+    letter-spacing: 7px;
+}
+
+.rights-claim {
+    margin-top: 46.31px;
+    flex: 0 0 auto;
+}
